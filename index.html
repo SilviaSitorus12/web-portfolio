@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Silvia Eklesiana Sitorus - Portfolio Website. Information Systems Student at Institut Teknologi Del.">
+    <meta name="keywords"
+        content="portfolio, web developer, designer, information systems, Silvia Eklesiana Sitorus, IT Del">
+    <meta name="author" content="Silvia Eklesiana Sitorus">
+    <title>Silvia Eklesiana Sitorus | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-text">
+                <span>W</span><span>E</span><span>L</span><span>C</span><span>O</span><span>M</span><span>E</span>
+            </div>
+            <div class="loader-subtitle">to my portfolio</div>
+            <div class="loader-bar">
+                <div class="loader-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-text">S<span class="logo-dot">.</span></span>
+            </a>
+            <div class="nav-links" id="nav-links">
+                <a href="#home" class="nav-link active" data-index="0">Home</a>
+                <a href="#about" class="nav-link" data-index="1">About</a>
+                <a href="#skills" class="nav-link" data-index="2">Skills</a>
+                <a href="#projects" class="nav-link" data-index="3">Projects</a>
+                <a href="#contact" class="nav-link" data-index="4">Contact</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-content">
+            <a href="#home" class="mobile-link" data-index="0">Home</a>
+            <a href="#about" class="mobile-link" data-index="1">About</a>
+            <a href="#skills" class="mobile-link" data-index="2">Skills</a>
+            <a href="#projects" class="mobile-link" data-index="3">Projects</a>
+            <a href="#contact" class="mobile-link" data-index="4">Contact</a>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg-elements">
+                <div class="floating-shape shape-1"></div>
+                <div class="floating-shape shape-2"></div>
+                <div class="floating-shape shape-3"></div>
+                <div class="grid-overlay"></div>
+            </div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-tag reveal-up">
+                        <span class="tag-dot"></span>
+                        <span>Information Systems Student</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-line reveal-up" style="--delay: 0.1s">Hi, I'm <span
+                                class="highlight">Silvia</span></span>
+                        <span class="title-line reveal-up" style="--delay: 0.2s">Aspiring</span>
+                        <span class="title-line reveal-up" style="--delay: 0.3s">
+                            <span class="typewriter" id="typewriter"></span>
+                            <span class="typewriter-cursor">|</span>
+                        </span>
+                    </h1>
+                    <p class="hero-description reveal-up" style="--delay: 0.4s">
+                        A passionate Information Systems student at Institut Teknologi Del, specializing in web
+                        development, UI/UX design, and digital solutions. I thrive on translating complex problems into
+                        elegant, user-centric experiences.
+                    </p>
+                    <div class="hero-actions reveal-up" style="--delay: 0.5s">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Let's Talk</span>
+                        </a>
+                    </div>
+                    <div class="hero-stats reveal-up" style="--delay: 0.6s">
+                        <div class="stat">
+                            <span class="stat-number" data-count="4">0</span><span class="stat-plus">th</span>
+                            <span class="stat-label">Semester</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="10">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Projects Done</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="5">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Skills Learned</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual reveal-up" style="--delay: 0.3s">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image-border"></div>
+                        <div class="hero-avatar">
+                            <img src="Silvi.jpeg" alt="Silvi" class="hero-photo">
+                        </div>
+                        <div class="orbit-ring">
+                            <div class="orbit-dot orbit-dot-1"></div>
+                            <div class="orbit-dot orbit-dot-2"></div>
+                            <div class="orbit-dot orbit-dot-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator reveal-up" style="--delay: 0.8s">
+                <div class="scroll-line"></div>
+                <span>Scroll Down</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag reveal-up">About Me</span>
+                    <h2 class="section-title reveal-up" style="--delay: 0.1s">Growing Through <br><span
+                            class="highlight">Learning & Creating</span></h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-content">
+                        <p class="about-text reveal-up" style="--delay: 0.2s">
+                            I am a driven Information Systems student with a strong foundation in analyzing, designing,
+                            and building digital solutions. As an active learner at Institut Teknologi Del, I am
+                            passionate about bridging the gap between technology and human needs.
+                        </p>
+                        <p class="about-text reveal-up" style="--delay: 0.3s">
+                            My journey in IT is fueled by a constant desire to grow, whether it involves crafting
+                            intuitive user interfaces, developing seamless web experiences, or leveraging analytical
+                            skills to optimize systems. I believe in the power of collaboration and continuous learning
+                            to create impactful, real-world solutions.
+                        </p>
+                        <div class="about-details reveal-up" style="--delay: 0.4s">
+                            <div class="detail-item">
+                                <span class="detail-icon">📍</span>
+                                <div>
+                                    <span class="detail-label">Location</span>
+                                    <span class="detail-value">Indonesia</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">🎓</span>
+                                <div>
+                                    <span class="detail-label">Education</span>
+                                    <span class="detail-value">Institut Teknologi Del</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📚</span>
+                                <div>
+                                    <span class="detail-label">Major</span>
+                                    <span class="detail-value">Information Systems</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">🌐</span>
+                                <div>
+                                    <span class="detail-label">Languages</span>
+                                    <span class="detail-value">Indonesian, English</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary reveal-up" style="--delay: 0.5s" download>
+                            <span>Download CV</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                <polyline points="7 10 12 15 17 10" />
+                                <line x1="12" y1="15" x2="12" y2="3" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="about-visual reveal-up" style="--delay: 0.3s">
+                        <div class="experience-card">
+                            <div class="exp-card-inner">
+                                <div class="exp-card-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="16 18 22 12 16 6" />
+                                        <polyline points="8 6 2 12 8 18" />
+                                    </svg>
+                                </div>
+                                <h3 class="exp-card-title">Development</h3>
+                                <p class="exp-card-desc">Building web solutions with modern technologies</p>
+                            </div>
+                        </div>
+                        <div class="experience-card">
+                            <div class="exp-card-inner">
+                                <div class="exp-card-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path
+                                            d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                                    </svg>
+                                </div>
+                                <h3 class="exp-card-title">Design</h3>
+                                <p class="exp-card-desc">Crafting user interfaces in Figma</p>
+                            </div>
+                        </div>
+                        <div class="experience-card">
+                            <div class="exp-card-inner">
+                                <div class="exp-card-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                                        <line x1="8" y1="21" x2="16" y2="21" />
+                                        <line x1="12" y1="17" x2="12" y2="21" />
+                                    </svg>
+                                </div>
+                                <h3 class="exp-card-title">Analysis</h3>
+                                <p class="exp-card-desc">Understanding systems and solving problems</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section skills" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag reveal-up">My Skills</span>
+                    <h2 class="section-title reveal-up" style="--delay: 0.1s">Technologies & <br><span
+                            class="highlight">Expertise</span></h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card reveal-up" style="--delay: 0.1s" data-skill="92">
+                        <div class="skill-icon-wrapper">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16v16H4z" />
+                                <path d="M4 4l8 8 8-8" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">HTML5</h3>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="--skill-level: 92%"></div>
+                        </div>
+                        <span class="skill-percent">92%</span>
+                    </div>
+                    <div class="skill-card reveal-up" style="--delay: 0.15s" data-skill="88">
+                        <div class="skill-icon-wrapper">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16v16H4z" />
+                                <path d="M12 4v16" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">CSS3</h3>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="--skill-level: 88%"></div>
+                        </div>
+                        <span class="skill-percent">88%</span>
+                    </div>
+                    <div class="skill-card reveal-up" style="--delay: 0.2s" data-skill="85">
+                        <div class="skill-icon-wrapper">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">JavaScript</h3>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="--skill-level: 85%"></div>
+                        </div>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-card reveal-up" style="--delay: 0.25s" data-skill="80">
+                        <div class="skill-icon-wrapper">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <circle cx="12" cy="12" r="4" />
+                                <line x1="4.93" y1="4.93" x2="9.17" y2="9.17" />
+                                <line x1="14.83" y1="14.83" x2="19.07" y2="19.07" />
+                                <line x1="14.83" y1="9.17" x2="19.07" y2="4.93" />
+                                <line x1="4.93" y1="19.07" x2="9.17" y2="14.83" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">React</h3>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="--skill-level: 80%"></div>
+                        </div>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="skill-card reveal-up" style="--delay: 0.3s" data-skill="75">
+                        <div class="skill-icon-wrapper">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                <path d="M2 17l10 5 10-5" />
+                                <path d="M2 12l10 5 10-5" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">Node.js</h3>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="--skill-level: 75%"></div>
+                        </div>
+                        <span class="skill-percent">75%</span>
+                    </div>
+                    <div class="skill-card reveal-up" style="--delay: 0.35s" data-skill="78">
+                        <div class="skill-icon-wrapper">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 19l7-7 3 3-7 7-3-3z" />
+                                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+                                <path d="M2 2l7.586 7.586" />
+                                <circle cx="11" cy="11" r="2" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">Figma</h3>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="--skill-level: 78%"></div>
+                        </div>
+                        <span class="skill-percent">78%</span>
+                    </div>
+                    <div class="skill-card reveal-up" style="--delay: 0.4s" data-skill="70">
+                        <div class="skill-icon-wrapper">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <ellipse cx="12" cy="5" rx="9" ry="3" />
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">Database</h3>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="--skill-level: 70%"></div>
+                        </div>
+                        <span class="skill-percent">70%</span>
+                    </div>
+                    <div class="skill-card reveal-up" style="--delay: 0.45s" data-skill="82">
+                        <div class="skill-icon-wrapper">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="18" cy="18" r="3" />
+                                <circle cx="6" cy="6" r="3" />
+                                <path d="M13 6h3a2 2 0 0 1 2 2v7" />
+                                <path d="M11 18H8a2 2 0 0 1-2-2V9" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">Git</h3>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="--skill-level: 82%"></div>
+                        </div>
+                        <span class="skill-percent">82%</span>
+                    </div>
+                    <div class="skill-card reveal-up" style="--delay: 0.5s" data-skill="85">
+                        <div class="skill-icon-wrapper">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 16a6 6 0 1 1 0-12A6 6 0 0 1 18 16z" />
+                                <path d="M9 12h6" />
+                                <path d="M12 9v6" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">C / C++</h3>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="--skill-level: 85%"></div>
+                        </div>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-card reveal-up" style="--delay: 0.55s" data-skill="80">
+                        <div class="skill-icon-wrapper">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+                                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+                                <line x1="6" y1="1" x2="6" y2="4" />
+                                <line x1="10" y1="1" x2="10" y2="4" />
+                                <line x1="14" y1="1" x2="14" y2="4" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">Java</h3>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="--skill-level: 80%"></div>
+                        </div>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section projects" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag reveal-up">Portfolio</span>
+                    <h2 class="section-title reveal-up" style="--delay: 0.1s">Featured <br><span
+                            class="highlight">Projects</span></h2>
+                </div>
+                <div class="projects-filter reveal-up" style="--delay: 0.2s">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web App</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                    <button class="filter-btn" data-filter="game">Game</button>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card reveal-up" style="--delay: 0.2s" data-category="design">
+                        <div class="project-image">
+                            <div class="project-placeholder" style="--accent: #a855f7">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z" />
+                                    <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z" />
+                                    <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z" />
+                                    <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z" />
+                                    <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z" />
+                                </svg>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://www.figma.com/design/WTyEKYrKFgQfdNl4Haerdf/dianita-ginting21-s-team-library?node-id=3411-2&t=Km9qjJq0o1Q4qVdj-1"
+                                    target="_blank" class="project-link" aria-label="View project on Figma">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                        <polyline points="15 3 21 3 21 9" />
+                                        <line x1="10" y1="14" x2="21" y2="3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="project-tag">Figma</span>
+                                <span class="project-tag">UI/UX</span>
+                            </div>
+                            <h3 class="project-title">UI/UX Design Project</h3>
+                            <p class="project-desc">A comprehensive UI/UX design featuring modern aesthetics, intuitive
+                                user flows, and cohesive brand elements crafted in Figma.</p>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal-up" style="--delay: 0.6s" data-category="game">
+                        <div class="project-image">
+                            <div class="project-placeholder" style="--accent: #ef4444">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path
+                                        d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8H12z" />
+                                    <polygon points="12 4 12 10 16 14 16 11"></polygon>
+                                    <circle cx="10" cy="10" r="1.5"></circle>
+                                    <circle cx="14" cy="10" r="1.5"></circle>
+                                </svg>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://github.com/SilviaSitorus12/pygame-game" target="_blank"
+                                    class="project-link" aria-label="View project on GitHub">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Pygame</span>
+                            </div>
+                            <h3 class="project-title">Pygame Project</h3>
+                            <p class="project-desc">An immersive desktop game engineered with Python and Pygame,
+                                featuring dynamic gameplay loops and engaging graphics.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Organization & Certification Section -->
+        <section class="section certifications" id="certifications">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag reveal-up">Organization</span>
+                    <h2 class="section-title reveal-up" style="--delay: 0.1s">Organization & <br><span
+                            class="highlight">Certification</span></h2>
+                </div>
+                <div class="cert-grid">
+                    <article class="cert-card reveal-up" style="--delay: 0.2s">
+                        <div class="cert-image">
+                            <img src="Sertif DEC.png" alt="DEL English Club Certificate" class="cert-img">
+                            <div class="cert-badge">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <polyline points="22 4 12 14.01 9 11.01" />
+                                </svg>
+                                <span>Verified</span>
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <div class="cert-org">
+                                <span class="cert-org-icon">🏛️</span>
+                                <span class="cert-org-name">Del English Club (DEC)</span>
+                            </div>
+                            <h3 class="cert-title">Member of Del English Club</h3>
+                            <p class="cert-desc">Recognized for exemplary service and dedication as a member of Del
+                                English Club at Institut Teknologi Del for the 2024/2025 period.</p>
+                            <div class="cert-meta">
+                                <span class="cert-period">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                        <line x1="16" y1="2" x2="16" y2="6" />
+                                        <line x1="8" y1="2" x2="8" y2="6" />
+                                        <line x1="3" y1="10" x2="21" y2="10" />
+                                    </svg>
+                                    2024 / 2025
+                                </span>
+                                <span class="cert-type">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <circle cx="12" cy="8" r="7" />
+                                        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                                    </svg>
+                                    Certificate of Participation
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="cert-card reveal-up" style="--delay: 0.3s">
+                        <div class="cert-image cert-pdf">
+                            <div class="cert-pdf-placeholder">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                    <line x1="16" y1="13" x2="8" y2="13" />
+                                    <line x1="16" y1="17" x2="8" y2="17" />
+                                    <polyline points="10 9 9 9 8 9" />
+                                </svg>
+                                <span class="pdf-label">PDF</span>
+                            </div>
+                            <div class="cert-badge">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <polyline points="22 4 12 14.01 9 11.01" />
+                                </svg>
+                                <span>Verified</span>
+                            </div>
+                            <a href="raport phyon.pdf" target="_blank" class="cert-download-btn" aria-label="View PDF">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="cert-info">
+                            <div class="cert-org">
+                                <span class="cert-org-icon">🐍</span>
+                                <span class="cert-org-name">Algonova Indonesia</span>
+                            </div>
+                            <h3 class="cert-title">Python Programming Report</h3>
+                            <p class="cert-desc">Completed a paid Python programming bootcamp at Algonova Indonesia,
+                                building skills in programming fundamentals, data handling, and problem-solving with
+                                Python.</p>
+                            <div class="cert-meta">
+                                <span class="cert-period">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                        <line x1="16" y1="2" x2="16" y2="6" />
+                                        <line x1="8" y1="2" x2="8" y2="6" />
+                                        <line x1="3" y1="10" x2="21" y2="10" />
+                                    </svg>
+                                    Bootcamp
+                                </span>
+                                <span class="cert-type">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <circle cx="12" cy="8" r="7" />
+                                        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                                    </svg>
+                                    Report Card
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="cert-card reveal-up" style="--delay: 0.4s">
+                        <div class="cert-image cert-pdf">
+                            <div class="cert-pdf-placeholder">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                    <line x1="16" y1="13" x2="8" y2="13" />
+                                    <line x1="16" y1="17" x2="8" y2="17" />
+                                    <polyline points="10 9 9 9 8 9" />
+                                </svg>
+                                <span class="pdf-label">PDF</span>
+                            </div>
+                            <div class="cert-badge">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <polyline points="22 4 12 14.01 9 11.01" />
+                                </svg>
+                                <span>Verified</span>
+                            </div>
+                            <a href="serif algo.pdf" target="_blank" class="cert-download-btn" aria-label="View PDF">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="cert-info">
+                            <div class="cert-org">
+                                <span class="cert-org-icon">🧠</span>
+                                <span class="cert-org-name">Algonova Indonesia</span>
+                            </div>
+                            <h3 class="cert-title">Algorithm & Programming Certificate</h3>
+                            <p class="cert-desc">Earned a certificate in Algorithms through a paid bootcamp at Algonova
+                                Indonesia, covering data structures, computational thinking, and algorithm design
+                                patterns.</p>
+                            <div class="cert-meta">
+                                <span class="cert-period">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                        <line x1="16" y1="2" x2="16" y2="6" />
+                                        <line x1="8" y1="2" x2="8" y2="6" />
+                                        <line x1="3" y1="10" x2="21" y2="10" />
+                                    </svg>
+                                    Bootcamp
+                                </span>
+                                <span class="cert-type">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <circle cx="12" cy="8" r="7" />
+                                        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                                    </svg>
+                                    Certificate of Completion
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="cert-card reveal-up" style="--delay: 0.5s">
+                        <div class="cert-image cert-pdf">
+                            <div class="cert-pdf-placeholder">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                    <line x1="16" y1="13" x2="8" y2="13" />
+                                    <line x1="16" y1="17" x2="8" y2="17" />
+                                    <polyline points="10 9 9 9 8 9" />
+                                </svg>
+                                <span class="pdf-label">PDF</span>
+                            </div>
+                            <div class="cert-badge">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <polyline points="22 4 12 14.01 9 11.01" />
+                                </svg>
+                                <span>Verified</span>
+                            </div>
+                            <a href="KAJIAN LITERATUR TREND PENELITIAN DI BIDANG .pdf" target="_blank"
+                                class="cert-download-btn" aria-label="View Literature Review PDF">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="cert-info">
+                            <div class="cert-org">
+                                <span class="cert-org-icon">📖</span>
+                                <span class="cert-org-name">Literature Review</span>
+                            </div>
+                            <h3 class="cert-title">Kajian Literatur Trend Penelitian di Bidang IoT</h3>
+                            <p class="cert-desc">Mengkaji tren penelitian terkait teknologi Internet of Things (IoT),
+                                mengeksplorasi perkembangan terbaru, tantangan, dan peluang inovasi di bidang analisis
+                                sistem informasi.</p>
+                            <div class="cert-meta">
+                                <span class="cert-period">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                        <line x1="16" y1="2" x2="16" y2="6" />
+                                        <line x1="8" y1="2" x2="8" y2="6" />
+                                        <line x1="3" y1="10" x2="21" y2="10" />
+                                    </svg>
+                                    Research
+                                </span>
+                                <span class="cert-type">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                        <polyline points="14 2 14 8 20 8" />
+                                    </svg>
+                                    Paper / Document
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag reveal-up">Get in Touch</span>
+                    <h2 class="section-title reveal-up" style="--delay: 0.1s">Let's Work <br><span
+                            class="highlight">Together</span></h2>
+                    <p class="section-subtitle reveal-up" style="--delay: 0.2s">
+                        Have a project or collaboration in mind? I'm actively seeking new opportunities to build
+                        amazing, impactful solutions. Let's start the conversation!
+                    </p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-card reveal-up" style="--delay: 0.2s">
+                            <div class="contact-card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="contact-card-label">Email</h4>
+                                <a href="mailto:silviaeklesiana12@gmail.com"
+                                    class="contact-card-value">silviaeklesiana12@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-card reveal-up" style="--delay: 0.3s">
+                            <div class="contact-card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="contact-card-label">Location</h4>
+                                <span class="contact-card-value">Indonesia</span>
+                            </div>
+                        </div>
+                        <div class="contact-card reveal-up" style="--delay: 0.4s">
+                            <div class="contact-card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="contact-card-label">LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/silvia-sitorus?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                                    target="_blank" class="contact-card-value">Silvia Sitorus</a>
+                            </div>
+                        </div>
+                        <div class="contact-card reveal-up" style="--delay: 0.4s">
+                            <div class="contact-card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="contact-card-label">WhatsApp</h4>
+                                <a href="https://wa.me/6285216900383" target="_blank"
+                                    class="contact-card-value">0852-1690-0383</a>
+                            </div>
+                        </div>
+                        <div class="contact-socials reveal-up" style="--delay: 0.5s">
+                            <h4 class="socials-label">Follow Me</h4>
+                            <div class="social-links">
+                                <a href="https://github.com/SilviaSitorus12" target="_blank" class="social-link"
+                                    aria-label="GitHub">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                    </svg>
+                                </a>
+                                <a href="https://www.linkedin.com/in/silvia-sitorus?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                                    target="_blank" class="social-link" aria-label="LinkedIn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                    </svg>
+                                </a>
+                                <a href="https://www.instagram.com/silvia_ekle12" target="_blank" class="social-link"
+                                    aria-label="Instagram">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form reveal-up" style="--delay: 0.3s" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" class="form-input" placeholder=" " required>
+                            <label for="name" class="form-label">Full Name</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" class="form-input" placeholder=" " required>
+                            <label for="email" class="form-label">Email Address</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" class="form-input" placeholder=" " required>
+                            <label for="subject" class="form-label">Subject</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" class="form-input form-textarea" placeholder=" "
+                                required rows="4"></textarea>
+                            <label for="message" class="form-label">Message</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Send Message</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13" />
+                                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <span class="footer-logo">S<span class="logo-dot">.</span></span>
+                <p class="footer-text">&copy; 2026 Silvia Eklesiana Sitorus. All rights reserved.</p>
+            </div>
+            <div class="footer-right">
+                <a href="#home" class="footer-link">Back to top ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
